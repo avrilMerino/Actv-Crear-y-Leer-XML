@@ -16,5 +16,20 @@ namespace Actividad_crear_y_leer_xml
         {
             InitializeComponent();
         }
+
+        private void btnCrear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLeerXML_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
