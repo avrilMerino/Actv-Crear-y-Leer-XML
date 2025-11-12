@@ -28,57 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tb1 = new System.Windows.Forms.TextBox();
+            this.tb2 = new System.Windows.Forms.TextBox();
+            this.tb3 = new System.Windows.Forms.TextBox();
+            this.tb4 = new System.Windows.Forms.TextBox();
+            this.tb5 = new System.Windows.Forms.TextBox();
             this.btnCrear = new System.Windows.Forms.Button();
             this.btnLeerXML = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tb1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(24, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tb1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb1.Location = new System.Drawing.Point(24, 38);
+            this.tb1.Name = "tb1";
+            this.tb1.Size = new System.Drawing.Size(100, 21);
+            this.tb1.TabIndex = 0;
+            this.tb1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // tb2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(43, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 21);
-            this.textBox2.TabIndex = 1;
+            this.tb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb2.Location = new System.Drawing.Point(43, 73);
+            this.tb2.Name = "tb2";
+            this.tb2.Size = new System.Drawing.Size(100, 21);
+            this.tb2.TabIndex = 1;
             // 
-            // textBox3
+            // tb3
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(66, 108);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 21);
-            this.textBox3.TabIndex = 2;
+            this.tb3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb3.Location = new System.Drawing.Point(66, 110);
+            this.tb3.Name = "tb3";
+            this.tb3.Size = new System.Drawing.Size(100, 21);
+            this.tb3.TabIndex = 2;
             // 
-            // textBox4
+            // tb4
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(92, 146);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 21);
-            this.textBox4.TabIndex = 3;
+            this.tb4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb4.Location = new System.Drawing.Point(92, 146);
+            this.tb4.Name = "tb4";
+            this.tb4.Size = new System.Drawing.Size(100, 21);
+            this.tb4.TabIndex = 3;
             // 
-            // textBox5
+            // tb5
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(121, 181);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 21);
-            this.textBox5.TabIndex = 4;
+            this.tb5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb5.Location = new System.Drawing.Point(121, 181);
+            this.tb5.Name = "tb5";
+            this.tb5.Size = new System.Drawing.Size(100, 21);
+            this.tb5.TabIndex = 4;
+            this.tb5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // btnCrear
             // 
@@ -138,11 +139,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnLeerXML);
             this.Controls.Add(this.btnCrear);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb5);
+            this.Controls.Add(this.tb4);
+            this.Controls.Add(this.tb3);
+            this.Controls.Add(this.tb2);
+            this.Controls.Add(this.tb1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -152,11 +153,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tb1;
+        private System.Windows.Forms.TextBox tb2;
+        private System.Windows.Forms.TextBox tb3;
+        private System.Windows.Forms.TextBox tb4;
+        private System.Windows.Forms.TextBox tb5;
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.Button btnLeerXML;
         private System.Windows.Forms.Button button2;
