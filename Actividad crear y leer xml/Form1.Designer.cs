@@ -35,8 +35,8 @@
             this.tb5 = new System.Windows.Forms.TextBox();
             this.btnCrear = new System.Windows.Forms.Button();
             this.btnLeerXML = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.flechaizq = new System.Windows.Forms.Button();
+            this.fechaderech = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tb1
@@ -86,7 +86,7 @@
             this.btnCrear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrear.ForeColor = System.Drawing.Color.Black;
-            this.btnCrear.Location = new System.Drawing.Point(278, 38);
+            this.btnCrear.Location = new System.Drawing.Point(309, 36);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(81, 23);
             this.btnCrear.TabIndex = 5;
@@ -98,7 +98,7 @@
             // 
             this.btnLeerXML.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnLeerXML.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLeerXML.Location = new System.Drawing.Point(278, 73);
+            this.btnLeerXML.Location = new System.Drawing.Point(309, 73);
             this.btnLeerXML.Name = "btnLeerXML";
             this.btnLeerXML.Size = new System.Drawing.Size(81, 23);
             this.btnLeerXML.TabIndex = 6;
@@ -106,37 +106,37 @@
             this.btnLeerXML.UseVisualStyleBackColor = false;
             this.btnLeerXML.Click += new System.EventHandler(this.btnLeerXML_Click);
             // 
-            // button2
+            // flechaizq
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Snow;
-            this.button2.Location = new System.Drawing.Point(24, 235);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(46, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "<";
-            this.button2.UseVisualStyleBackColor = false;
+            this.flechaizq.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.flechaizq.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flechaizq.ForeColor = System.Drawing.Color.Snow;
+            this.flechaizq.Location = new System.Drawing.Point(24, 235);
+            this.flechaizq.Name = "flechaizq";
+            this.flechaizq.Size = new System.Drawing.Size(46, 23);
+            this.flechaizq.TabIndex = 7;
+            this.flechaizq.Text = "<";
+            this.flechaizq.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // fechaderech
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(227, 235);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(46, 23);
-            this.button3.TabIndex = 8;
-            this.button3.Text = ">";
-            this.button3.UseVisualStyleBackColor = false;
+            this.fechaderech.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.fechaderech.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fechaderech.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.fechaderech.Location = new System.Drawing.Point(227, 235);
+            this.fechaderech.Name = "fechaderech";
+            this.fechaderech.Size = new System.Drawing.Size(46, 23);
+            this.fechaderech.TabIndex = 8;
+            this.fechaderech.Text = ">";
+            this.fechaderech.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(468, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.fechaderech);
+            this.Controls.Add(this.flechaizq);
             this.Controls.Add(this.btnLeerXML);
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.tb5);
@@ -160,8 +160,8 @@
         private System.Windows.Forms.TextBox tb5;
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.Button btnLeerXML;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button flechaizq;
+        private System.Windows.Forms.Button fechaderech;
     }
 }
 
