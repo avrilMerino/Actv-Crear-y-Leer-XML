@@ -93,6 +93,7 @@ namespace Actividad_crear_y_leer_xml
         {
             try
             {
+               //ruta:
                 string escritorio = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
                 string ruta = Path.Combine(escritorio, "datos.xml");
 
@@ -101,7 +102,7 @@ namespace Actividad_crear_y_leer_xml
                     MessageBox.Show("No existe datos.xml en el Escritorio.");
                     return;
                 }
-
+                //Abrir y cargar el XML
                 var doc = new XmlDocument();
                 doc.Load(ruta);
 
@@ -112,9 +113,8 @@ namespace Actividad_crear_y_leer_xml
                     return;
                 }
 
-                // ✅ Para tu estructura anidada, tratamos como “registros”
-                // a TODOS los elementos del documento en recorrido preorden.
-                // Así podrás moverte con las flechas por cada nodo.
+                // a TODOS los elementos del documento en recorrido preorden
+                // Así podrás moverte con las flechas por cada nodo
                 _registros = raiz.SelectNodes(".//*/self::*")
                                  .OfType<XmlElement>()
                                  .Prepend(raiz) // incluye también la raíz
@@ -136,29 +136,30 @@ namespace Actividad_crear_y_leer_xml
         }
         private void PintarRegistroActual()
         {
+            //si le dan a la izq mucho no hacemos nada
             if (_pos < 0 || _pos >= _registros.Count) return;
 
             // Limpia
             tb1.Clear(); tb2.Clear(); tb3.Clear(); tb4.Clear(); tb5.Clear();
 
-            // Tomamos el nodo actual
+            //Tomamos el nodo actual
             var actual = _registros[_pos];
 
             // Queremos rellenar tb1..tb5 con la "cadena" desde el actual hacia abajo
-            // siguiendo el primer hijo elemento en cada nivel (si existe).
+            // siguiendo el primer hijo elemento en cada nivel (si existe)
             var cajas = new[] { tb1, tb2, tb3, tb4, tb5 };
             var nodo = actual;
 
             for (int i = 0; i < cajas.Length && nodo != null; i++)
             {
-                // Si el nodo tiene texto útil, lo mostramos; si no, mostramos su nombre
+                //Si el nodo tiene texto útil, lo mostramos; si no, mostramos su nombre
                 var valor = nodo.InnerText?.Trim();
                 if (string.IsNullOrEmpty(valor))
-                    cajas[i].Text = nodo.Name;     // solo nombre (tu caso de crear sin texto)
+                    cajas[i].Text = nodo.Name;     //solo nombre
                 else
-                    cajas[i].Text = valor;         // si alguna vez metes texto, se verá
+                    cajas[i].Text = valor;         //si alguna vez metes texto, se verá
 
-                // bajar al primer hijo que sea elemento
+                //bajar al primer hijo que sea elemento
                 nodo = nodo.ChildNodes
                            .OfType<XmlElement>()
                            .FirstOrDefault();
